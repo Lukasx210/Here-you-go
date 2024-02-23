@@ -1,0 +1,29 @@
+/* styles.css */
+.root {
+    -fx-font-size: 16px;
+}
+
+#main-container {
+    -fx-background-color: gray;
+    -fx-spacing: 20;
+}
+
+#login-container {
+    -fx-background-color: white;
+    -fx-spacing: 10;
+    -fx-padding: 20;
+}
+
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 0 0 1 0;
+}
+
+.button {
+    -fx-font-size: 14px;
+}
+
+#hello-label {
+    -fx-font-size: 20px;
+}
