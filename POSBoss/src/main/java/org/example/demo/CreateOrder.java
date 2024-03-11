@@ -3,6 +3,7 @@ package org.example.demo;
 import java.io.IOException;
 
 import javafx.animation.ScaleTransition;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -18,6 +19,9 @@ public class CreateOrder {
 
     @FXML
     private Label result;
+
+    @FXML
+    private Button xbut;
 
     private Stage stage;
 
@@ -118,6 +122,11 @@ public class CreateOrder {
 
         // Play the scale transition
         scaleTransition.play();
+    }
+
+    @FXML
+    public void userExit(ActionEvent event) throws IOException {
+        Platform.exit();
     }
 
 }
